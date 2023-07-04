@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  position: relative;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) url("../img/bg1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-header {
+  background-color: #fff1ff;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nav-container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.logo-container img {
+  height: 100px;
+  width: 150px;
+  padding: 14px 16px;
+}
+
+.float-left {
+  /*position: absolute;
+  right: 30px;*/
+}
+
+.primary-list {
+  display: inline-block;
+  padding: 14px 16px;
+  list-style: none;
+}
+.primary-list a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #26A8FF;
+}
+.primary-list i {
+  color: #26A8FF;
+  font-size: 24px;
+}
+
+.main-nav {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #fff;
+  background-color: #26A8FF;
+  height: 50px;
+  width: 100%;
+}
+
+.link-list {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.page-link {
+  text-align: justify;
+  padding: 12px 14px;
+  list-style: none;
+  display: inline-block;
+}
+.page-link a {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.scss.map */
