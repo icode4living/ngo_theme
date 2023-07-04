@@ -1,3 +1,95 @@
-
+@media (max-width: 760px) {
+  body, html {
+    width: 100%;
+  }
+  header {
+    height: 70%;
+  }
+  .contact-section {
+    display: none;
+  }
+  .main-nav-container {
+    display: none;
+    background-color: #fff;
+    height: 100%;
+    width: 70%;
+    transition: width 0.3s step-end;
+    animation: open-nav 5s linear;
+    position: relative;
+  }
+  .link-item {
+    border-bottom: 1px solid #f5f2f2;
+    display: block;
+  }
+  .link-item a {
+    padding: 10px 12px;
+    color: #272727;
+  }
+  .m-btn {
+    display: block;
+    padding: 14px 16px;
+  }
+  .m-btn i {
+    color: #fff;
+    font-size: 32px;
+    position: absolute;
+    right: 20px;
+  }
+  .caption-text {
+    top: 25%;
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    left: 0 unset !important;
+  }
+  .caption-text h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .caption-text p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .grid-container {
+    left: 0;
+    width: 100% !important;
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+  .grid-container::-webkit-scrollbar {
+    display: none;
+  }
+  .--sm-grid {
+    padding-right: 50px;
+  }
+  .sm-grid {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    animation: primary 5s linear infinite !important;
+  }
+  .sm-grid:hover {
+    -webkit-animation-play-state: paused;
+  }
+}
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+@keyframes open-nav {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
 
 /*# sourceMappingURL=mobile.css.map */
