@@ -87,8 +87,8 @@ header {
 
 .caption-text {
   top: 20%;
+  text-align: center;
   position: relative;
-  left: 5%;
 }
 .caption-text h1 {
   color: #fff;
