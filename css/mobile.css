@@ -12,6 +12,10 @@
   .main-nav-container {
     display: none;
   }
+  .main-nav {
+    transition: width 0.3s ease-in-out;
+    animation: close-nav 0.3s linear;
+  }
   .m-main-nav {
     background-color: #fff;
     top: 0;
@@ -84,6 +88,15 @@
     -webkit-animation-play-state: paused;
   }
 }
+.close-btn {
+  display: none;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  color: #181717;
+  font-size: 24px;
+}
+
 @keyframes primary {
   from {
     left: 0%;
@@ -107,6 +120,15 @@
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+@keyframes close-nav {
+  from {
+    width: 80%;
+  }
+  to {
+    width: 0%;
+  }
 }
 
 /*# sourceMappingURL=mobile.css.map */
