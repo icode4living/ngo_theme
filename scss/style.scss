@@ -4,7 +4,7 @@ $main-color:#2E6FF2;
 $footer-color:#4F5954;
 $text-color:#444444;
 $padding-val:100px;
-$margin-val:30px;
+$margin-val:200px;
  html, body{
     overflow-x: hidden;
     height: 100%;
@@ -207,7 +207,7 @@ i{
         border-radius: 50%;
         height: 250px;
         width: 250px;
-        border: 5px solid #2E6FF2;
+        border: 10px solid #fff;
     }
     p{
         font-size: 24px;
@@ -220,6 +220,7 @@ i{
     grid-template-columns: repeat(4,350px);
     gap:2rem;
 place-items: center;
+margin-bottom: 20px;
 }
 .article-card{
     background-color: #fff;
@@ -287,13 +288,61 @@ height: 10px;
     position: absolute;
 left: 50%;
 top:25%;
-    background-color: rgba(0,0,0,0.1);
-    color:#2E6FF2;
+    background-color: $main-color;
+    color:#fff;
+    border: 2px solid #fff;
     border-radius: 50%;
-    border: none;
+    //border: none;
     align-self: center;
     i{
         padding: 10px;
         font-size: 2.5rem;
     }
+}
+.flex-container{
+    display: flex;
+}
+.grid-2{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 250px);    
+    max-width: 400px;
+    gap: 1rem;
+}
+.img-box{
+    border: 4px solid #ececec;
+    height: 250px;
+    img{
+        height: inherit;
+        width: 100%;
+    }
+}
+.value-list{
+    flex: 2;
+    margin-left: $margin-val;
+    text-align: justify;
+    a{
+        font-size: 18px;
+    }
+
+    li{
+        font-size: 18px;
+        padding: 12px 16px;
+        list-style: none;
+        display: block;
+        color: $text-color;
+        
+    }
+    p{
+        font-size: 20px;
+        line-height: 32px;
+        flex-wrap: wrap;
+    }
+}
+.fa-check{
+    //color: $main-color;
+    background-color: $main-color;
+    border-radius: 50%;
+    color: #fff;
+    padding: 10px;
 }

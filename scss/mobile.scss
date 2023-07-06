@@ -1,5 +1,5 @@
-$main-color:#2E6FF2;
-
+//$main-color:#2E6FF2;
+@import 'style';
 @media (max-width:760px) {
     body,html{
         width: 100%;
@@ -105,8 +105,60 @@ z-index: 1;
         animation: primary 5s linear infinite !important;
 
     }
-    .sm-grid:hover{
-        -webkit-animation-play-state: paused;
+    .container{
+        margin-top: 200px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .our-story{
+        display: block;
+    }
+    .article{
+        width: inherit;
+        padding: 5px;
+    }
+    .grid-3{
+        overflow-x: scroll;
+        grid-template-columns: repeat(4,300px);
+width: 100%;
+        gap: 1fr;
+        transition: overflow 0.2s ease-in-out;
+    }
+    .article-card{
+        background-color: #fff;
+        img{
+            height: 250px;
+            width: 100%;
+        }
+    }
+    .card-content{
+        padding: 8px;
+        flex-wrap: wrap;
+        h2{
+            text-align: center;
+            color: $text-color;
+        }
+        p{
+            color: $text-color;
+            line-height: 24px;
+        }
+        .flex-container{
+            display: block;
+        }
+        .grid-2{
+            width: 100%;
+            overflow-x: scroll;
+            grid-template-rows: repeat(4, 300px)!important;    
+
+        }
+    }
+    .lg-text{
+        font-size: 2rem;
+    }
+    .play-btn{
+        top: 10%;
+        left: 40%;
+        //right: 25%;
     }
 }
 .close-btn{

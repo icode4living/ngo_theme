@@ -214,7 +214,7 @@ header {
   border-radius: 50%;
   height: 250px;
   width: 250px;
-  border: 5px solid #2E6FF2;
+  border: 10px solid #fff;
 }
 .round-img p {
   font-size: 24px;
@@ -226,6 +226,7 @@ header {
   grid-template-columns: repeat(4, 350px);
   gap: 2rem;
   place-items: center;
+  margin-bottom: 20px;
 }
 
 .article-card {
@@ -298,15 +299,64 @@ header {
   position: absolute;
   left: 50%;
   top: 25%;
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #2E6FF2;
+  background-color: #2E6FF2;
+  color: #fff;
+  border: 2px solid #fff;
   border-radius: 50%;
-  border: none;
   align-self: center;
 }
 .play-btn i {
   padding: 10px;
   font-size: 2.5rem;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.grid-2 {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  max-width: 400px;
+  gap: 1rem;
+}
+
+.img-box {
+  border: 4px solid #ececec;
+  height: 250px;
+}
+.img-box img {
+  height: inherit;
+  width: 100%;
+}
+
+.value-list {
+  flex: 2;
+  margin-left: 200px;
+  text-align: justify;
+}
+.value-list a {
+  font-size: 18px;
+}
+.value-list li {
+  font-size: 18px;
+  padding: 12px 16px;
+  list-style: none;
+  display: block;
+  color: #444444;
+}
+.value-list p {
+  font-size: 20px;
+  line-height: 32px;
+  flex-wrap: wrap;
+}
+
+.fa-check {
+  background-color: #2E6FF2;
+  border-radius: 50%;
+  color: #fff;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
