@@ -1,8 +1,7 @@
 <!DOCTYPE html> 
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-<meta http-equiv="Content-Type" content="text/html">
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
 crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -149,7 +148,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
             <div class="items-container">
                 <h1 class="center lg-text"><span class="first-word">Recent</span>  Campaigns</h1>
                 <div class="grid-3">
-                    <div class="article-card">
+                    <div class="article-card relative">
                         <img src="img/bg1.jpg" alt="...">
                         <div class="card-content">
                             <!--<div class="progress-bar">
@@ -159,12 +158,12 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                             <h2>Widow Donation</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                                <a href="#" class="read-more"><i class="fa-regular fa-heart"></i> Support Us</a>
+                                <a href="#" class="read-more top-btn"><i class="fa-regular fa-heart"></i> Support Us</a>
 
                         </div>
                     </div>
 
-                    <div class="article-card">
+                    <div class="article-card relative">
                         <img src="img/bg2.jpg" alt="...">
                         <div class="card-content">
                            <!-- <div class="progress-bar">
@@ -174,12 +173,12 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                             <h2>Widow Donation</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                                <a href="#" class="read-more"><i class="fa-regular fa-heart"></i> Support Us</a>
+                                <a href="#" class="read-more top-btn"><i class="fa-regular fa-heart"></i> Support Us</a>
 
                         </div>
                     </div>
 
-                    <div class="article-card">
+                    <div class="article-card relative">
                         <img src="img/bg1.jpg" alt="...">
                         <div class="card-content">
                           <!--<div class="progress-bar">
@@ -190,7 +189,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 ipsum dolor sit amet, consectetur adipisicing elit. </p>
                                 
-                                <a href="#" class="read-more"><i class="fa-regular fa-heart"></i> Support Us</a>
+                                <a href="#" class="read-more top-btn"><i class="fa-regular fa-heart"></i> Support Us</a>
 
                         </div>
                     </div>
@@ -204,35 +203,41 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 ipsum dolor sit amet, consectetur adipisicing elit. </p>
         </div>
-        <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+        <button class="play-btn" title="Play video"><i class="fa-solid fa-play"></i></button>
     </div>
     <div class="container-2">
         <div class="review-container">
-        <h1 class="lg-text center">People<span class="first-word">Reviews</span></h1>
+        <h1 class="lg-text center">What People<span class="first-word"> Say</span></h1>
         <div class="review-slide">
-<div class="reviews">
+<div class="reviews fade ">
     <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, 
         consectetur, adipisci velit
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, 
+            consectetur, adipisci velit
     </p>
     <small>John Doe</small>
     </div>
-    <div class="reviews">
+    <div class="reviews fade">
         <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, 
+            consectetur, adipisci velit
+            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, 
             consectetur, adipisci velit
         </p>
         <small>Mary Kay</small>
 
     </div>
-    <div class="reviews">
+    <div class="reviews fade">
         <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, 
+            consectetur, adipisci velit
+            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, 
             consectetur, adipisci velit
         </p>
         <small>Sam Kay</small>
 
     </div>
-    <a class="dot"></a>
-    <a class="dot"></a>
-    <a class="dot"></a>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
 
 </div>
 
@@ -273,6 +278,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         </div>
     </div>
     <script src="js/nav.js"></script>
+    <script src="js/slide.js"></script>
+
 </body>
 
 </html>

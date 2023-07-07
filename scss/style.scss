@@ -382,23 +382,61 @@ color: $main-color;
     color: #fff;
    // padding: 10px;*/
 }
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
 .reviews{
     display: none;
-    text-align: justify;
+    background-color: #faf6f6;
+    padding: 20px;  
+    box-sizing: content-box;
+    margin: 0 auto;
+   // border:1px solid #bbb;
+    border-radius: 10px;
+    max-width: 600px;
+    flex-wrap: wrap;
     p{
         color: $text-color;
         line-height: 32px;
+        font-size: 16px;
     }
     small{
         color: $text-color;
     }
 }
 .dot{
-    display: inline-block;
     background-color: #ececec;
     border-radius: 50%;
-    font-size: 14px;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin: 0 2px;
+    margin-top: 20px;
+  //  padding-top: 20px;
+}
+.active{
+    background-color: $main-color;
 }
 .review-slide{
-    text-align: center;
+  // display: block;
+   text-align: center;
+    padding: 20px;
+}
+.top-btn{
+    position: absolute;
+    right: 0;
+    top:0;
+    overflow: hidden;
+    opacity: 0.9;
+}
+.relative{
+    position: relative;
 }
