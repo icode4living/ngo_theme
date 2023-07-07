@@ -191,6 +191,17 @@ width: 100%;
         color: $text-color;
         display: block;
     }
+    .footer-container{
+        padding: 0;
+    }
+    .grid-4{
+        display:block;
+        
+    }
+    .footer-items{
+        text-align: center;
+
+    }
 }
 .close-btn{
     display: none;

@@ -465,4 +465,78 @@ header {
   position: relative;
 }
 
+/*footer*/
+.footer-container {
+  padding-left: 100px;
+}
+
+footer {
+  background-color: #121212;
+  border-bottom: 20px solid #2E6FF2;
+}
+
+.footer-items {
+  box-sizing: content-box;
+  flex-wrap: wrap;
+  color: #f8f3f3;
+  text-align: justify;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 0.5rem;
+}
+
+.footer-link {
+  display: block;
+  list-style: none;
+  padding: 12px 14px;
+}
+.footer-link a {
+  text-decoration: none;
+  color: #faf9f9;
+}
+
+.social {
+  display: inline-block;
+  list-style: none;
+}
+.social a {
+  margin: 0 4px;
+  text-decoration: none;
+  color: #f6f7f6;
+  font-size: 24px;
+}
+
+.news-letter {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 0;
+}
+.news-letter input[type=email] {
+  margin: 0;
+  border-top-left-radius: 10px;
+  padding: 10px;
+  outline-style: none;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border: 1px solid "Roboto", sans-serif;
+}
+.news-letter button {
+  border: 1px solid #f6f7f6;
+  color: #f6f7f6;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #2E6FF2;
+  border: none;
+  margin: 0;
+}
+
+.copy-right {
+  border-top: 1px solid #444444;
+  padding: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
