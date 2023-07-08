@@ -1,0 +1,18 @@
+@import "style";
+
+.white-bg{
+    background-color: #fff;
+    margin: 20px;
+
+}
+.contact-list{
+   padding: 20px;
+}
+.contact-items{
+list-style: none;
+padding: 12px 16px;
+a{
+    text-decoration: none;
+    color: $text-color;
+}
+}
