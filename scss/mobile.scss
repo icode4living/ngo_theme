@@ -202,6 +202,27 @@ width: 100%;
         text-align: center;
 
     }
+    /**blog css rules*/
+    .news-container{
+        padding: 0;
+    }
+    .side-bar{
+        display: none;
+    }
+    .blog-container{
+
+        width: 100%;
+        margin: 10px;
+    }
+   .article-container{
+    background-color: #fff;
+    margin-bottom: 10px;
+    h1{
+        padding: 0;
+        text-align: justify;
+        font-size: normal;
+    }
+} 
 }
 .close-btn{
     display: none;
