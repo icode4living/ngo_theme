@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Mochiy+Pop+One&display=swap");
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("../img/donate/portrait-little.jpg");
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  flex-wrap: wrap;
+}
+
+.blue-bg {
+  background-color: rgb(16, 40, 255);
+}
+
+.hero-text {
+  position: absolute;
+  top: 40%;
+  color: white;
+  left: 5%;
+  width: 50%;
+}
+
+.fade-text {
+  opacity: 0;
+  transition: opacity;
+  animation: fade-in ease-out 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.fade-text h1 {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-size: 4em;
+  margin: 0;
+}
+
+.sm-title {
+  font-family: "Inclusive Sans", sans-serif;
+  color: white;
+  position: relative;
+}
+
+.sm-title::before {
+  content: " ";
+  position: absolute;
+  top: 8px;
+  left: -20px;
+  width: 15px;
+  height: 2px;
+  background-color: orangered;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=donate.css.map */

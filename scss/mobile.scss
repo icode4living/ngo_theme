@@ -222,7 +222,42 @@ width: 100%;
         text-align: justify;
         font-size: normal;
     }
+    
+    
 } 
+/**Faq*/
+.faq-container{
+    width: 100%;
+    flex-wrap: wrap;
+    h2{
+    font-size:16px ;
+    }
+}
+.show-dropdown{
+right:25px;
+bottom:10px;
+
+}
+.logo{
+    top: -20px;
+
+position: absolute;
+    a{
+        padding: 4px 8px;
+
+text-decoration: none;
+
+
+    }
+    img{
+        width: 120px;
+        height: 120px;
+    }
+}
+}
+.top-nav{
+    padding-left: 10px;
+    padding-right:10px;
 }
 .close-btn{
     display: none;
