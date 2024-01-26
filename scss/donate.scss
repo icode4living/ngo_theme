@@ -36,7 +36,7 @@ width: 50%;
 .fade-text{
     opacity: 0;
     transition: opacity;
-    animation: fade-in ease-out 2s ;
+    animation: fade-in ease-in 2s ;
     animation-iteration-count: 1;
 animation-fill-mode: forwards;
 
@@ -68,4 +68,13 @@ h1{
         opacity: 1;
 
     }
+}
+.donate-action{
+    text-decoration: none;
+    padding: 16px;
+    color: white;
+    font-family: 'Inclusive Sans', sans-serif;
+    color: wheat;
+    background-color:rgb(16, 40, 255) ;
+    margin-top: 25rem;
 }
