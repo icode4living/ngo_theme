@@ -1,0 +1,14 @@
+{
+  "name": "ngo_theme",
+  "version": "1.0.0",
+  "description": "donation page added",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Afolabi Samuel #UCV",
+  "license": "ISC",
+  "dependencies": {
+    "wow.js": "^1.2.2"
+  }
+}
