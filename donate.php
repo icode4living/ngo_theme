@@ -1,3 +1,6 @@
+<?php
+require __DIR__. '/vendor/autoload.php';
+?>
 <!DOCTYPE html> 
 <html lang="en">
     <head>
@@ -51,8 +54,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 </div>
 <div class="mission">
     <div class="wow bounceInUp">
-<h2 class="title-center">Our Activities</h2>
-<!--<p> Our primary objective is to uplift the underprivileged 
+<!--<h2 class="title-center">Our Activities</h2>
+<p> Our primary objective is to uplift the underprivileged 
     and bring joy to their lives</p>-->
     <section class="img-grid">
         <div class="img-round">
@@ -172,7 +175,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 <h1> Your donation will help change lives and 
     Bring huge smiles
 </h1>
-<form class="payment">
+<form class="payment" id="paymentForm">
     <div class="input-group">
         <span>
             <input type="radio" name="pay-type"  value="one-off">
@@ -187,18 +190,18 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     </div>
     <div class="inline-form">
     <div class="input-group">
-        <label for="group" class="block-label"> I want to Donate for</label>
-            <select required>
+        <label for="donation" class="block-label"> I want to Donate for</label>
+            <select name="donation" id="description" required>
                 <option value="" selected hidden> Select a program</option>
-                <option value="sickle-cell">Free drugs program for Sickle cell</option>
-                <option value="widow-empowerment">Widow Empowerment</option>
-                <option value="children-education">Children Education</option>
+                <option value="sickle-cell donation">Free drugs program for Sickle cell</option>
+                <option value="widow-empowerment donation">Widow Empowerment</option>
+                <option value="children-education donation">Children Education</option>
 
             </select>
         </div>
         <div class="input-group">
-            <label for="Currency" class="block-label"> Currency </label>
-                <select required>
+            <label for="currency" class="block-label"> Currency </label>
+                <select name="currency" required id="currency">
                     <option value="" selected hidden> I would donate in</option>
                     <option value="NGN">Nigerian Naira (&#8358;)</option>
                     <option value="USD">US Dollars (&#36;)</option>
@@ -210,21 +213,34 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     </div>
     <div class="ïnline-form">
     <div class="input-group">
-    <label for="fullname" class="block-label">Names</label>
-    <input type="text" name="fullname" placeholder="Enter your fullname"
-    aria-placeholder="fullname" aria-autocomplete="name">
+    <label for="name" class="block-label">Names</label>
+    <input type="text" name="name" placeholder="Enter your fullname"
+    aria-placeholder="Fullname" aria-autocomplete="fullname" id="name">
         </div>
         <div class="input-group">
             <label for="email" class="block-label">Email</label>
-            <input type="email" name="email" placeholder="someone@exmple.com"
-            aria-autocomplete="email" aria-placeholder="email">
-                </div>
+            <input type="email" name="email" placeholder="someone@exmple.com" 
+            aria-autocomplete="email" aria-placeholder="email" id="email">
+                
+        </div>
     </div>
+    <div class="ïnline-form">
     <div class="input-group">
-        <h3> How much do you want to donate?</h3>
+    <label for="phone" class="block-label">Mobile Number</label>
+    <input type="tel" name="phone" placeholder="Enter your mobile number" 
+            aria-autocomplete="phone" aria-placeholder="Enter your mobile number" id="phone">
+    </div>
+    <div class= "input-group">
+    <label for="amount" class="block-label">How much do you want to donate?</label>
         <input type="text" name="amount" placeholder="Enter amount"
         inputmode="numeric" pattern="[0-9]*" class="amount" id="amount" required>
 </div>
+    </div>
+    <!--<div class= "input-group">
+        <h3> How much do you want to donate?</h3>
+        <input type="text" name="amount" placeholder="Enter amount"
+        inputmode="numeric" pattern="[0-9]*" class="amount" id="amount" required>
+</div>-->
 <button class="submit-payment" type="submit">Send donation</button>
 </form>
         </div>
@@ -233,14 +249,14 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
      
     </body>
     <script src="js/donate_slide.js"></script>
-    <script src="js/paymaster.js" type="module"></script>
-    <script src="https://checkout.flutterwave.com/v3.js"></script>
     <script src="wow.js/dist/WOW.js"></script>
     <script>
         new WOW().init();
     </script>
+     <script src="js/paymaster.js" type="module"></script>
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
 </html>
-
-
+<?
+?>
 
     

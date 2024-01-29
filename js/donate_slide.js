@@ -18,4 +18,7 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
 
-//form control
+document.addEventListener("scroll", ()=>{
+///document.querySelector(".header").style.display="block"
+//alert("hello")
+});
