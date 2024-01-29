@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Mochiy+Pop+One&display=swap');
+*{box-sizing: border-box;}
 body,html{
     height: 100%;
     margin: 0;
@@ -33,7 +34,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url("../donate/portrait-little.jpg");
-
+overflow: hidden;
 }
 .flex-container{
     display: flex;
@@ -57,7 +58,7 @@ width: 60%;
 }
 .fade-text{
     opacity: 0;
-    transition: opacity;
+    transition: opacity 0.6s ease;
     animation: fade-in ease-in 2s ;
     animation-iteration-count: 1;
 animation-fill-mode: forwards;
@@ -324,15 +325,24 @@ color: #fff;
 /** 
 mobile screen
 */
-.review-container{
-    display: flex;
+.reviews{
     background-color: rgb(230, 238, 252);
-    padding: 24px;
+    height: auto;
     position: relative;
 
 }
+.review-containers{
+    display: none;
+}
+.review-container{
+    display: flex;
+    padding: 24px;
+    animation-name:fade ;
+    animation-duration: 1.5s;
+
+}
 .review-text{
-    margin-left: 100px;
+    margin-right: 20px;
     flex: 1;
     flex-wrap: wrap;
     padding: 16px;
@@ -343,9 +353,16 @@ mobile screen
 
     }
 }
-
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to{
+        opacity: 1;
+    }
+}
 .review-img{
-    margin-right:100px ;
+    margin-left:50px ;
     margin-left: 30px;
     width: 600px;
     img{
@@ -362,30 +379,48 @@ mobile screen
         width: 10px;
     }
 }
-#next, #prev{
+.next, .prev{
     position: absolute;
     color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.6s ease;
+    user-select: none;
     cursor: pointer;
 
 }
-#next:hover, #prev:hover{
+.next:hover, .prev:hover{
     border-radius: 50%;
     padding: 8px;
     background-color: rgba(0,0,0, .1);
 }
-#prev{
+.prev{
     right: 30px;
     top:150px;
     font-size: 30px;
+    position: absolute;
 
 }
-#next{
+.next{
     left: 30px;
     top:150px;
     font-size: 30px;
+    position: absolute;
 
 }
-
+.dot{
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
 .img-grid{
     grid-template-columns: repeat(4, 1fr);
 column-gap: 20px;
@@ -406,8 +441,58 @@ column-gap: 20px;
         background-color: #fff;
     }
 }
+footer{
+    width: 100%;
+   /* background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.9)), url("../img/bg.jpg");*/
+    background-color:#121212;//rgb(16, 40, 255) ;
+    overflow: hidden;
 
+
+}
+.footer{
+    text-align: center;
+
+    h2{
+        font-family: 'Inclusive Sans', sans-serif;
+        color: rgba(255, 255, 255,.6);
+    }
+}
+.contact-link{
+    list-style: none;
+    padding: 12px 16px;
+    font-family: 'Inclusive Sans', sans-serif;
+    display: inline-block;
+    color: rgba(255, 255, 255,.6);
+
+    a{
+        color: rgba(255, 255, 255,.6);
+
+
+        text-decoration: none;
+    }
+}
 @media (max-width:800px) {
+    .submit-payment{
+        margin: 0;
+    }
+
+    .contact-link{
+        list-style: none;
+        padding: 8px 12px;
+        font-family: 'Inclusive Sans', sans-serif;
+        display: block;
+        color: white;
+    
+        a{
+            color: white;
+    
+    
+            text-decoration: none;
+        }
+    }
     .sm-title::before{
         left: -15px;
     }
@@ -419,11 +504,14 @@ column-gap: 20px;
     }
     .hero-text{
         position:absolute ;
-        top:40%;
+        top:25%;
         color: white;
         left: 2%;
     width: 100%;
         
+    }
+    .hero{
+        background-position: center;
     }
     .fade-text{
         flex-wrap: wrap;
@@ -501,9 +589,10 @@ column-gap: 20px;
             font-size: 16px;
     
         }
-        input[type="text"], input[type="email"],input[type="email"]{
+        
+        select,input[type="text"], input[type="email"],input[type="tel"]{
             border: none;
-            width: 80%;
+            width: 100%;
             padding: 8px;
             background-color: #fff;
         }
@@ -520,11 +609,16 @@ column-gap: 20px;
     }
 
     .review-container{
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         background-color: rgb(230, 238, 252);
         padding: 8px;
         position: relative;
     
+    }
+    .prev, .next{
+        display: none;
     }
     .review-text{
         margin-left: 0;

@@ -1,5 +1,5 @@
 <?php
-require __DIR__. '/vendor/autoload.php';
+//require __DIR__. '/vendor/autoload.php';
 ?>
 <!DOCTYPE html> 
 <html lang="en">
@@ -81,20 +81,42 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     </section>
 </div>
 </div>
+<div class="reviews">
 <div class="review-container">
-<section class="review-text wow bounceInUp">
+<section class="review-img">
+<img src="./donate/medium-shot.jpg" alt="">
+</section>
+<section class="review-text">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit
         ipsum dolor sit amet, consectetur adipisicing elit
         ipsum dolor sit amet consectetur adipisicing elitipsum dolor sit amet, consectetur adipisicing elit</p>
 </section>
-<section class="review-img wow bounceInUp">
+</div>
+<!--Slide2-->
+<div class="review-container">
+<section class="review-img">
 <img src="./donate/medium-shot.jpg" alt="">
 </section>
-<span id="next"><i class="fa-solid fa-angle-left"></i></span>
-<span id="prev"><i class="fa-solid fa-angle-right"></i></span>
+<section class="review-text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit
+        ipsum dolor sit amet, consectetur adipisicing elit
+        ipsum dolor sit amet consectetur adipisicing elitipsum dolor sit amet, consectetur adipisicing elit</p>
+</section>
 </div>
+<a class="next" onclick="_plusSlides(1)">&#10094;</a>
+<a class="prev" onclick="_plusSlides(-1)">&#10095;</a>
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)">
+</span>
+<span class="dot" onclick="currentSlide(2)">
+</span>
 </div>
+
+</div>
+
+
 <div class="main">
 
     <h1 class="title-center">Ongoing charity programs</h1>
@@ -189,7 +211,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     </span>
     </div>
     <div class="inline-form">
-    <div class="input-group">
+    <!--<div class="input-group">
         <label for="donation" class="block-label"> I want to Donate for</label>
             <select name="donation" id="description" required>
                 <option value="" selected hidden> Select a program</option>
@@ -198,7 +220,12 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                 <option value="children-education donation">Children Education</option>
 
             </select>
-        </div>
+        </div>-->
+        <div class= "input-group">
+    <label for="amount" class="block-label">How much do you want to donate?</label>
+        <input type="text" name="amount" placeholder="Enter amount"
+        inputmode="numeric" pattern="[0-9]*" class="amount" id="amount" required>
+</div>
         <div class="input-group">
             <label for="currency" class="block-label"> Currency </label>
                 <select name="currency" required id="currency">
@@ -213,16 +240,27 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     </div>
     <div class="ïnline-form">
     <div class="input-group">
+        <label for="donation" class="block-label"> I want to Donate for</label>
+            <select name="donation" id="description" required>
+                <option value="" selected hidden> Select a program</option>
+                <option value="sickle-cell donation">Free drugs program for Sickle cell</option>
+                <option value="widow-empowerment donation">Widow Empowerment</option>
+                <option value="children-education donation">Children Education</option>
+
+            </select>
+        </div>
+    <div class="input-group">
     <label for="name" class="block-label">Names</label>
     <input type="text" name="name" placeholder="Enter your fullname"
     aria-placeholder="Fullname" aria-autocomplete="fullname" id="name">
         </div>
-        <div class="input-group">
+        
+       <!-- <div class="input-group">
             <label for="email" class="block-label">Email</label>
             <input type="email" name="email" placeholder="someone@exmple.com" 
             aria-autocomplete="email" aria-placeholder="email" id="email">
                 
-        </div>
+        </div>-->
     </div>
     <div class="ïnline-form">
     <div class="input-group">
@@ -230,23 +268,39 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     <input type="tel" name="phone" placeholder="Enter your mobile number" 
             aria-autocomplete="phone" aria-placeholder="Enter your mobile number" id="phone">
     </div>
-    <div class= "input-group">
+    <!--<div class= "input-group">
     <label for="amount" class="block-label">How much do you want to donate?</label>
         <input type="text" name="amount" placeholder="Enter amount"
         inputmode="numeric" pattern="[0-9]*" class="amount" id="amount" required>
-</div>
-    </div>
-    <!--<div class= "input-group">
-        <h3> How much do you want to donate?</h3>
-        <input type="text" name="amount" placeholder="Enter amount"
-        inputmode="numeric" pattern="[0-9]*" class="amount" id="amount" required>
 </div>-->
+<div class="input-group">
+            <label for="email" class="block-label">Email</label>
+            <input type="email" name="email" placeholder="someone@exmple.com" 
+            aria-autocomplete="email" aria-placeholder="email" id="email">
+                
+        </div>
+    </div>
+   
 <button class="submit-payment" type="submit">Send donation</button>
 </form>
         </div>
     </div>
 </div>
-     
+    <footer>
+      <div class="footer"> 
+        <section class="footer-list">
+<h2> Reach out to us</h2>
+<ul>
+<li class="contact-link"><a href="tel:+2348064624882">+234 806 462 4882</a></li>
+<li class="contact-link"><a href="mailto:info@johnpaulokonmafdn.org">info@johnpaulokonmafdn.org</a></li>
+<li class="contact-link">18, Sir Emmanuel Okonkwo Street, Off Old Anwai Road, Asaba </li>
+
+</ul>
+</section>
+<section class="grid-item">
+</section>
+</div>
+</footer>
     </body>
     <script src="js/donate_slide.js"></script>
     <script src="wow.js/dist/WOW.js"></script>

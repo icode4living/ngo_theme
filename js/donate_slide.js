@@ -22,3 +22,31 @@ document.addEventListener("scroll", ()=>{
 ///document.querySelector(".header").style.display="block"
 //alert("hello")
 });
+
+//reviews slide
+let _slideIndex = 1;
+_showSlides(slideIndex);
+
+function _plusSlides(x) {
+  _showSlides(slideIndex += x);
+}
+
+function currentSlide(x) {
+  _showSlides(slideIndex = x);
+}
+
+function _showSlides(x) {
+  let _i;
+  let _slides = document.getElementsByClassName("review-container");
+  let _dots = document.getElementsByClassName("dot");
+  if (x > _slides.length) {_slideIndex = 1}    
+  if (x < 1) {_slideIndex = _slides.length}
+  for (_i = 0; _i < _slides.length; _i++) {
+    _slides[_i].style.display = "none";  
+  }
+  for (_i = 0; _i < _dots.length; _i++) {
+    _dots[_i].className = _dots[_i].className.replace(" active", "");
+  }
+  _slides[slideIndex-1].style.display = "flex";  
+  _dots[slideIndex-1].className += " active";
+}
