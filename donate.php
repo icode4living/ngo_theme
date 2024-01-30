@@ -1,11 +1,19 @@
 <?php
-//require __DIR__. '/vendor/autoload.php';
+//start a session
+session_start();
 ?>
 <!DOCTYPE html> 
 <html lang="en">
     <head>
         <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
+<meta name="description" content=" Give a helping hand to those who need with your donation towards 
+The Johpaul Okonma Foundation initiatives (Free drugs and treatment for the people with sickle cell, 
+widow empowerment, donation of relief materials to IDP camp and correctional center, and
+provision of social amenities to the community and free education) to
+help save lives, and keep the vulnerables hope alive.
+We commited to making humanity better by supporting and reaching out Sthe vulnerables around the world.
+">
 <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
@@ -15,7 +23,7 @@
 crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/donate.css">  
       
-        <title>Donate</title>
+        <title>Donate-JohnPaul Okonma Foundation</title>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" 
         referrerpolicy="no-referrer"></script>
     </head>
@@ -75,7 +83,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                                 </div>
                                 <div class="img-round">
                                     <img src="./donate/heart.png" alt="">
-                                    <h2>200 + </h2>
+                                    <h2>700 + </h2>
                                     <p>Free Healthcare</p>
                                             </div>
     </section>
@@ -84,25 +92,25 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 <div class="reviews">
 <div class="review-container">
 <section class="review-img">
-<img src="./donate/medium-shot.jpg" alt="">
+<img src="./donate/donation_nigerian_correctional_center.jpg" 
+alt="JohnPaul Okonma Foundation donated relief items to the Nigerian correctional center">
 </section>
 <section class="review-text">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit
-        ipsum dolor sit amet, consectetur adipisicing elit
-        ipsum dolor sit amet consectetur adipisicing elitipsum dolor sit amet, consectetur adipisicing elit</p>
+    <p>The JohnPaul Okonma Foundation 
+        team donated relief items to the Nigerian correctional center to support
+        the wellfare of the inmates. 
+    </p>
 </section>
 </div>
 <!--Slide2-->
 <div class="review-container">
 <section class="review-img">
-<img src="./donate/medium-shot.jpg" alt="">
+<img src="./donate/sicklecell_free_drugs.jpg" alt="">
 </section>
 <section class="review-text">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit
-        ipsum dolor sit amet, consectetur adipisicing elit
-        ipsum dolor sit amet consectetur adipisicing elitipsum dolor sit amet, consectetur adipisicing elit</p>
+    <p>The JohnPaul Okonma foundation commitment to the annual free drugs and medical treatment 
+        for the people with sickle cell has been keeping hope alive.
+     </p>
 </section>
 </div>
 <a class="next" onclick="_plusSlides(1)">&#10094;</a>
@@ -119,47 +127,51 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <div class="main">
 
-    <h1 class="title-center">Ongoing charity programs</h1>
+    <h1 class="title-center">Our Cause</h1>
     <div class="grid-container wow bounceIn" data-wow-duration="2s">
 <div class="grid-item">
-    <img src="./donate/portrait-little.jpg" alt="">
+    <img src="./donate/widows_empowerment.jpg" 
+    alt="Donation for widow empowerment and SME business setup">
 
     <div class="content-box">
 
         <h2>Widow Empowerment</h2>
         
 
-        <p>We are raising up 100,000,000 Naira to 
-            empower 100 widows 
+        <p>We are raising up 100,000,000 Naira to set up
+            SME business for 1,000 widows 
         </p>
         <div class="value">
-            <span class="--left"><small>Raised: 800,000 NGN </small></span>
-            <span class="--right"><small>Goal: 2,000,000 NGN </small></span>    
-            <progress value="40" max="100">
+            <span class="--left"><small><b>Raised:</b> 12,000,000 NGN </small></span>
+            <span class="--right"><small><b>Goal:</b> 99,988,000 NGN </small></span>    
+            <progress value="12" max="100">
             </progress>
-    
+
             </div>
-            <button class="pay-btn">Make a donation</button>
 
     </div>
+    <button class="pay-btn">Make a donation</button>
+
 </div>
 <!--
 
 -->
 
 <div class="grid-item">
-    <img src="./donate/portrait-little.jpg" alt="">
+    <img src="./donate/sicklecell_free_drugs.jpg" 
+    alt="Annual free drugs and medical care to 
+    the people with sickle cell by JohnPaul Okonma Foundation ">
     <div class="content-box">
-        <h2>Widow Empowerment</h2>
+        <h2>Free Medical care</h2>
         
 
-        <p>We are raising up 100,000,000 Naira to 
-            empower 100 widows 
+        <p>Support our annual free medical care and drugs
+            to people with sickle cell
         </p>
        <div class="value">
-        <span class="--left"><small>Raised: 700,000 NGN </small></span>
-        <span class="--right"><small>Goal: 1000,0000 NGN </small></span>
-        <progress value="70" max="100">
+        <span class="--left"><small><b>Raised:</b> 500,0000 NGN </small></span>
+        <span class="--right"><small><b>Goal:</b> 87,000,000 NGN </small></span>
+        <progress value="6" max="100">
         </progress>
     </div>
     <button class="pay-btn">Make a donation </button>
@@ -171,21 +183,24 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 -->
 
 <div class="grid-item">
-    <img src="./donate/portrait-little.jpg" alt="">
+    <img src="./donate/free_education.jpg" alt="JohnPaul Okonma foundation is 
+    supporting public schools with stationaries, school wears and 
+            repair of dilapidated classrooms">
     <div class="content-box">
-        <h2>Widow Empowerment</h2>
+        <h2>Education Support</h2>
         
-        <p>We are raising up 100,000,000 Naira to 
-            empower 100 widows 
+        <p>
+            We are supporting public schools with stationaries, school wears and 
+            repair of dilapidated classrooms
         </p>
        <!-- <button class="pay-btn">Donate</button>-->
        <div class="value">
-        <span class="--left"><small>Raised: 400,000 NGN </small></span>
-        <span class="--right"><small>Goal: 800,000 NGN </small></span>
-        <progress value="50" max="100">
+        <span class="--left"><small><b>Raised:</b> 1,200,000 NGN </small></span>
+        <span class="--right"><small><b>Goal:</b> 25,000,000 NGN </small></span>
+        <progress value="12" max="100">
         </progress>
     </div>
-    <button class="pay-btn">Make a donation</button>
+    <button class="pay-btn">Make a donation</a>
 
     </div>
 </div>
@@ -210,6 +225,9 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         <label for="monthly">Monthly donation</label>
     </span>
     </div>
+    <input type="hidden" name="consumer_mac" value="<?php echo session_id(); ?>" id="consumer_mac">
+    <input type="hidden" name="txn_ref" value="<?php echo 'DN-'.strtotime('now'); ?>" id="txn_ref">
+
     <div class="inline-form">
     <!--<div class="input-group">
         <label for="donation" class="block-label"> I want to Donate for</label>
@@ -297,7 +315,18 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </ul>
 </section>
-<section class="grid-item">
+<section class="social-links">
+    <ul>
+        <li class="facebook"><a href="#" ><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li class="instagram"><a href="#" ><i class="fa-brands fa-instagram"></i></a></li>
+        <li class="whatsapp"><a href="#" ><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li class="x" ><a href="#"><i class="fa-brands fa-x-twitter"></i>
+            <!--<img src="./donate/x-twitter.svg" class="">-->
+        </a></li>
+        <li class="linkedin"><a href="#" ><i class="fa-brands fa-linkedin-in"></i></a></li>
+
+
+    </ul>
 </section>
 </div>
 </footer>

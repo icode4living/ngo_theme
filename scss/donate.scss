@@ -9,17 +9,18 @@ body,html{
 }
 .header{
     width: 100%;
-    background-color: rgba(255, 255, 255,.4);
+    background-color: rgba(255, 255, 255,.8);
     height: 120px;
     position: fixed;
     z-index: 1;
     overflow: hidden;
     display: none;
+    transition: display 0.6s ease-in;
     img{
         position: absolute;
         margin-left: 50px;
         height: 100px;
-        width: 100px;
+        width: 150px;
     }
 }
 body{
@@ -170,13 +171,14 @@ progress::-webkit-progress-bar {
     background-color: rgb(0, 110, 255);
  }
 .pay-btn{
-    margin-top: 12px;
+    margin-top: 20px;
     border-radius: 5px;
     border: none;
     padding: 12px;
+    text-decoration: none;
     //border: 2px solid #1212;
     color: #fff;
-    background-color:    rgb(38, 88, 252);
+    background-color:    rgb(0, 110, 255);
 
    // width: 100px;
    margin-left: 12px;
@@ -465,16 +467,68 @@ footer{
     padding: 12px 16px;
     font-family: 'Inclusive Sans', sans-serif;
     display: inline-block;
-    color: rgba(255, 255, 255,.6);
+    color: rgba(255, 255, 255,.4);
 
     a{
-        color: rgba(255, 255, 255,.6);
+        color: rgba(255, 255, 255,.4);
 
 
         text-decoration: none;
     }
 }
+.social-links{
+    li{
+        display: inline-block;
+        padding: 8px 12px;
+    }
+   
+}
+
+.facebook{
+    background-color: #316FF6;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+.instagram{
+    background-color: #C13584;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+.whatsapp{
+    background-color: #128c7e;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+.linkedin{
+    background-color: #0077B5;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+.x{
+background-color: #fdfcfc;
+a{
+color: #121212 !important;
+}
+}
+//mobile-rules
 @media (max-width:800px) {
+    .header{
+        height: 80px;
+        img{
+            padding-top: 4px;
+            width: 100px;
+            height: 80px;
+            margin-left: 10px;
+        }
+    }
     .submit-payment{
         margin: 0;
     }
@@ -504,7 +558,7 @@ footer{
     }
     .hero-text{
         position:absolute ;
-        top:25%;
+        top:15%;
         color: white;
         left: 2%;
     width: 100%;
@@ -664,4 +718,34 @@ footer{
     }
 }
 
+//tablet screen
+@media (max-width:1024px) {
+    .header{
+        height: 80px;
+        img{
+            padding-top: 4px;
+            width: 100px;
+            height: 80px;
+            margin-left: 20px;
+        }
+    }
+.hero-text{
+    top:40%;
 
+}
+.fade-text{
+    flex-wrap: wrap;
+
+h1{
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 2.5em;
+    margin-top: 0;
+    flex-wrap: wrap;
+}
+}
+.grid-item{
+    img{
+        height: auto;
+    }
+}
+}

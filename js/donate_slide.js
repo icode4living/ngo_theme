@@ -17,10 +17,16 @@ function showSlides() {
   //dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
-
+//Display logo while user scroll to top
 document.addEventListener("scroll", ()=>{
-///document.querySelector(".header").style.display="block"
-//alert("hello")
+  //check if user scroll to top
+  if(window.scrollY===0){
+    document.querySelector(".header").style.display="none"
+  }
+  else{
+    document.querySelector(".header").style.display="block"
+  }
+
 });
 
 //reviews slide
